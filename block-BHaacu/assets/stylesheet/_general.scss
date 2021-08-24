@@ -1,0 +1,72 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    line-height: 1.5;
+    font-family: $font-family;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.width-full {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.brand {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.red {
+    color: $primary-color;
+}
+
+.black {
+    color: #333333;
+}
+
+.active {
+    background-color: #EB5F61;
+    color: white;
+}
