@@ -87,6 +87,30 @@ body {
   display: flex;
 }
 
+.flex-15 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 13%;
+          flex: 0 1 13%;
+}
+
+.flex-22 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 22%;
+          flex: 0 1 22%;
+}
+
+.flex-30 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+}
+
+.flex-45 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
+}
+
 .wrap {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -121,6 +145,10 @@ a {
   display: inline-block;
 }
 
+.padding-top {
+  margin-top: 4rem;
+}
+
 .brand {
   font-size: 1.8rem;
   font-weight: 900;
@@ -137,6 +165,31 @@ a {
 .active {
   background-color: #EB5F61;
   color: white;
+}
+
+.btn, .hero-btn, .services-btn, .cta-one a, .description-one a, .cta-two a, .p-cols a {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border: 1px solid #DC4445;
+  border-radius: 20px;
+}
+
+.default-h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  padding-bottom: 1rem;
+  text-transform: capitalize;
+  color: #1B1E24;
+}
+
+.default-p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  color: #6C757E;
+  padding-bottom: 2rem;
 }
 
 /*Header*/
@@ -186,5 +239,548 @@ a {
   background: url(../media/banner-1.jpg) center center no-repeat;
   background-size: cover;
   height: 86vh;
+}
+
+.hero-section .container {
+  padding-top: 20vh;
+}
+
+.hero-section h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+.hero-section p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.hero-btn {
+  background-color: #DC4445;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/*Services Section*/
+.services-section {
+  text-align: center;
+}
+
+.services-col {
+  padding: 4rem 1.2rem;
+  border: 1px solid #dbdbdb;
+  border-radius: 15px;
+}
+
+.services-col img {
+  width: 20%;
+}
+
+.services-col h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.services-col p {
+  color: #7D858C;
+  padding: 1.5rem 0;
+}
+
+.services-btn {
+  color: #DC4445;
+}
+
+/*CTA-one*/
+.cta-one {
+  text-align: center;
+  background-color: #F8F9FA;
+  padding: 3rem 0;
+}
+
+.cta-one .container {
+  max-width: 900px;
+}
+
+.cta-one a {
+  color: #DC4445;
+}
+
+/*Description-one*/
+.description-one h2 {
+  text-align: left;
+  font-size: 1.7rem;
+}
+
+.description-one p {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.description-one a {
+  color: #DC4445;
+  width: 30%;
+  text-align: center;
+}
+
+.description-one-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*CTA-two*/
+.cta-two {
+  background-color: #DC4445;
+  color: white;
+  padding: 2rem 0;
+}
+
+.cta-two a {
+  color: white;
+  border-color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.cta-two h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-bottom: 0.6rem;
+}
+
+.cta-two p {
+  font-weight: 100;
+}
+
+/*Description-two*/
+.description-two {
+  font-size: 0px;
+}
+
+.description-two p {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.description-two h2 {
+  text-align: left;
+}
+
+.description-two-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*Clients Section*/
+.clients {
+  padding: 3rem 0;
+  background-color: #edf0f3;
+}
+
+/*Footer*/
+.footer {
+  color: #BDBDBD;
+  background-color: #343A40;
+  padding: 3rem 0;
+}
+
+.footer-col-1 li {
+  font-size: 1rem;
+  color: grey;
+}
+
+.footer-col-1 li a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: grey;
+  margin-left: 0.5rem;
+}
+
+.footer-col-1 .footer-col-1-li {
+  font-size: 1.3rem;
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.footer-social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.footer-social-link li {
+  margin-right: 1.5rem;
+}
+
+.footer-social-link li a {
+  color: grey;
+}
+
+.footer-col-2 li {
+  font-size: 1.2rem;
+}
+
+.footer-col-2 li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: grey;
+}
+
+.footer-end-text {
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  color: grey;
+}
+
+.footer-end-text strong {
+  color: white;
+  font-size: 1rem;
+}
+
+.down-footer {
+  text-align: center;
+  padding-top: 3rem;
+  color: grey;
+}
+
+/*Header*/
+.header-cta {
+  background-color: #DC4445;
+  color: white;
+  padding: 0.4rem 0;
+  font-size: 0.9rem;
+}
+
+.header-cta a {
+  color: white;
+}
+
+.header-cta-left li {
+  padding-right: 2rem;
+}
+
+.header-cta-left i {
+  padding-right: 0.4rem;
+}
+
+.header-cta-right a {
+  padding-left: 1.2rem;
+}
+
+.header-main {
+  background-color: #F2F2F2;
+  padding: 0.6rem 0;
+}
+
+.header-main a {
+  color: #333333;
+}
+
+.header-main-right a {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.header-main-right li {
+  padding-left: 1.3rem;
+}
+
+/*Pricing Header*/
+.pricing-header {
+  background-color: #DC4445;
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.pricing-header h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding-bottom: 1rem;
+}
+
+.pricing-header p {
+  font-weight: 300;
+}
+
+.pricing-col {
+  background-color: #F8F9FA;
+  padding: 3rem 0;
+}
+
+.top-p {
+  max-width: 900px;
+  color: #7E868D;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.p-cols {
+  background-color: white;
+  text-align: center;
+  padding: 2rem 1.6rem;
+  border: 1px solid #DFDFDF;
+  margin-top: 4rem;
+}
+
+.p-cols h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.p-cols span {
+  display: block;
+  padding: 1rem 0;
+  color: #767F86;
+}
+
+.p-cols li {
+  padding-bottom: 0.7rem;
+}
+
+.p-cols a {
+  color: #DC4445;
+}
+
+.p-cols a .active {
+  color: white;
+  background-color: #DC4445;
+}
+
+strong {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+/*FAQ COL*/
+.head {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 0.7rem;
+}
+
+.text {
+  text-align: center;
+  color: grey;
+}
+
+.faq-col {
+  margin-top: 1rem;
+  padding: 1.5rem 1.5rem;
+  border: 1px solid #DFDFDF;
+}
+
+.faq-col p {
+  color: #788087;
+  padding: 0.7rem 0;
+}
+
+/*service-page*/
+.service-page-header {
+  background-color: #f2f2f2;
+}
+
+.service-page-header h1 {
+  font-weight: 700;
+}
+
+.service-page-header h1 strong {
+  color: #dc3c45;
+}
+
+/*service-page-hero-section*/
+.service-page-hs {
+  padding: 2rem 0;
+  color: white;
+}
+
+.service-page-hs h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+/*service-page-product-section*/
+.service-page-sc {
+  padding: 5rem 0;
+}
+
+.service-page-sc h3 {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.service-page-sc p {
+  color: grey;
+  padding-top: 1rem;
+  line-height: 1.5;
+}
+
+.service-page-ps-col {
+  margin-top: 1rem;
+}
+
+.service-page-ps-col h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+
+.service-page-ps-col p {
+  color: grey;
+  margin-bottom: 2rem;
+}
+
+.service-page-ps-col .btn, .service-page-ps-col .hero-btn, .service-page-ps-col .services-btn, .service-page-ps-col .cta-one a, .cta-one .service-page-ps-col a, .service-page-ps-col .description-one a, .description-one .service-page-ps-col a, .service-page-ps-col .cta-two a, .cta-two .service-page-ps-col a, .service-page-ps-col .p-cols a, .p-cols .service-page-ps-col a {
+  color: #DC4445;
+  background-color: white;
+  border: 2px solid #DC4445;
+}
+
+.service-page-ps-item {
+  padding: 2rem 2rem;
+}
+
+.service-page-ps-icon-container {
+  width: 30%;
+  height: auto;
+}
+
+/*service-page-request-section*/
+.justify-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.service-page-request-section {
+  padding: 3rem 0;
+  background-color: #DC4445;
+  color: white;
+}
+
+.service-page-request-section h2 {
+  border-right: 1px solid white;
+  margin-right: 2.5rem;
+  padding-right: 2rem;
+  font-weight: 700;
+}
+
+/*award-section*/
+.service-page-award-section {
+  padding-top: 4rem;
+}
+
+.service-page-award-section h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.service-page-award-section p {
+  color: grey;
+  line-height: 1.5;
+  padding: 1rem  20rem;
+}
+
+.service-page-award-article {
+  padding: 1.5rem 0;
+  padding-bottom: 3rem;
+}
+
+.service-page-award-article h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding-bottom: 1rem;
+}
+
+.service-page-award-article p {
+  color: grey;
+}
+
+.ap-mid-section {
+  padding: 2rem 0;
+}
+
+.ap-mid-section-item span i {
+  font-size: 3rem;
+  color: black;
+  margin-right: 3rem;
+}
+
+.ap-mid-section-item h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.ap-mid-section-item p {
+  color: grey;
+  padding-left: 0;
+  margin-bottom: 1.8rem;
+}
+
+.ap-team-section {
+  padding: 6rem 0;
+  background-color: #f2f2f2;
+}
+
+.ap-team-section h2 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.ap-team-section-item {
+  background-color: white;
+  padding-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.ap-team-section-item h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.ap-team-section-item p {
+  color: #DC4445;
+}
+
+.ap-article-section {
+  padding: 3rem 6rem;
+}
+
+.ap-article-section h2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  padding-bottom: 1rem;
+}
+
+.ap-article-section p {
+  color: grey;
+  padding-bottom: 1.4rem;
 }
 /*# sourceMappingURL=style.css.map */

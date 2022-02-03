@@ -1,0 +1,130 @@
+/*Header*/
+
+.header-cta {
+    background-color: $primary-color;
+    color: white;
+    padding: 0.4rem 0;
+    font-size: 0.9rem;
+    a {
+        color: white;
+    }
+}
+
+.header-cta-left {
+    li {
+        padding-right: 2rem;
+    }
+    i {
+        padding-right: 0.4rem;
+    }
+}
+
+.header-cta-right {
+    a {
+        padding-left: 1.2rem;
+    }
+}
+
+.header-main {
+    background-color: #F2F2F2;
+    padding: 0.6rem 0;
+    a {
+        color: #333333;
+    }
+}
+
+.header-main-right {
+    a {
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+    li {
+        padding-left: 1.3rem;
+    }
+}
+
+/*Pricing Header*/
+
+.pricing-header {
+    background-color: #DC4445;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        padding-bottom: 1rem;
+    }
+    p {
+        font-weight: 300;
+    }
+}
+
+.pricing-col {
+    background-color: #F8F9FA;
+    padding: 3rem 0;
+}
+
+.top-p {
+    max-width: 900px;
+    color: #7E868D;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.p-cols {
+    background-color: white;
+    text-align: center;
+    padding: 2rem 1.6rem;
+    border: 1px solid #DFDFDF;
+    margin-top: 4rem;
+    h3 {
+        font-size: 1.7rem;
+        font-weight: 700;
+        padding-bottom: 1rem;
+    }
+    span {
+        display: block;
+        padding: 1rem 0;
+        color: #767F86;
+    }
+    li {
+        padding-bottom: 0.7rem;
+    }
+    a {
+        @extend .btn;
+        color: $primary-color;
+        .active {
+            color: white;
+            background-color: $primary-color;
+        }
+    }
+}
+
+strong {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/*FAQ COL*/
+
+.head {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 0.7rem;
+}
+.text {
+    text-align: center;
+    color: grey;
+}
+
+.faq-col {
+    margin-top: 1rem;
+    padding: 1.5rem 1.5rem;
+    border: 1px solid #DFDFDF;
+    p {
+        color: #788087;
+        padding: 0.7rem 0;
+    }
+}
