@@ -1,0 +1,112 @@
+.contact-page-header{
+    
+    background-color: rgb(242,242,242);
+    
+    h1{
+        font-weight: 700;
+        strong{
+            color: rgb(220,60,69);
+        }
+    }
+
+}
+
+
+.contact-page-hs{
+    padding: 4rem 0;
+    background-color: $primary-color;
+    color: white;
+    h2{
+        font-size: 2.4rem;
+        font-weight: 800;
+    }
+}
+
+.cp-address-section{
+padding: 5rem 0;
+}
+
+.cp-text{
+    @extend .default-p;
+}
+
+
+.cp-address-section-item{
+padding: 2rem;
+li{
+    i{  
+        color: $primary-color;
+        font-size: 1.5rem;
+        display: inline-block;
+        
+        padding: 1.2rem;
+        border-radius: 50%;
+        background-color: rgba(224, 218, 218, 0.5);
+
+    }
+}
+}
+
+
+.cp-address-section-item h2{
+font-size: 1.4rem;
+font-weight: 600;
+padding: 0.8rem 0;
+}
+
+.cp-address-section-item p{
+font-size: 1rem;
+}
+
+.cp-address-section-item a{
+text-decoration: none;
+color: black;
+}
+
+
+.cp-cfs-heading{
+padding: 2rem 5rem;
+color: grey;
+h2{
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 900;
+    padding: 1rem 0;
+}
+}
+
+.cp-form-item-1{
+iframe{
+  height: 35vh;
+}
+}
+
+.form-control{
+    padding: 0.7rem 0;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+}
+
+.cp-form .btn{
+    display: inline-block;
+    text-align: center;
+    border: none;
+    padding: 0.4rem 1.2rem;
+    border: 1px solid #DC4445;
+    border-radius: 20px;
+    max-width: 30%;
+    background-color: white;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+
+.padding-bottom{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.cp-form {
+    display: flex;
+    flex-direction: column;
+}
