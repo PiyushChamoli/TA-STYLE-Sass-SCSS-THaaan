@@ -12,7 +12,7 @@
     <title>Assignment1-SASS | Pricing</title>
 </head>
 <body class="pricing-page">
-    <header>
+    <header class="sm-full-header">
         <div class="header-cta">
             <div class="container flex justify-between">
                 <ul class="flex header-cta-left">
@@ -32,16 +32,24 @@
             </div>
         </div>
         <div class="header-main">
-            <div class="container flex justify-between align-center">
-                <a href="#" class="brand"><span class="red">Uni</span> TECH</a>
-            <nav>
-                <ul class="flex justify-between header-main-right">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Pages</a></li>
+            <div class="container flex justify-between align-center sm-header">
+                <a href="./index.html" class="brand"><span class="red">Uni</span> TECH</a>
+                <label class="bars" for="toggle"><i class="fas fa-bars"></i></label>
+                <input id= "toggle" type="checkbox">
+                <nav class="nav">
+                <ul class="flex justify-between header-main-right sm-column">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li class="dropdown-menu"><a href="#">Pages
+                        <i class="fas fa-angle-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="./pricing.html">Pricing</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">404 Page</a></li>
+                    </ul></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
                 </ul>
             </nav>
             </div>

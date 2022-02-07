@@ -38,10 +38,35 @@
         font-weight: 500;
         font-size: 0.9rem;
     }
+}
+.header-main-right li {
+    padding-left: 1.3rem;
+}
+.header-main-right .dropdown-menu {
+    position: relative;
+}
+
+.header-main-right  .dropdown {
+    box-shadow: 0.2px 0.2px 5px rgba(black,0.5);
     li {
-        padding-left: 1.3rem;
+        margin: 10px 7px;
+        padding: 0rem;
+        text-align: center;
+    }
+    position: absolute;
+    width: 6rem;
+    top: 25px;
+    background-color: lightgray;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.header-main-right .dropdown-menu:hover {
+    .dropdown {
+        display: inline-block;
     }
 }
+
 
 /*Hero Section*/
 
@@ -255,4 +280,103 @@
     text-align: center;
     padding-top: 3rem;
     color: grey;
+}
+
+#toggle,.bars {
+    display: none;
+}
+
+/*Media queries*/
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+    .header-cta > div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sm-flex-100 {
+        flex: 0 1 100%;
+    }
+    .sm-flex-30 {
+        flex: 0 1 30%;
+    }
+    .sm-flex-45 {
+        flex: 0 1 45%;
+    }
+    .sm-wrap {
+        flex-wrap: wrap;
+    }
+    .description-one-col {
+        align-items: center;
+    }
+    .cta-two div{
+        justify-content: center;
+    }
+    .sm-cta-two-div {
+        text-align: center;
+    }
+    .default-h2, .default-p {
+        align-self: center;
+    }
+    .hero-section {
+        background-position: right;
+    }
+    .sm-column {
+        flex-direction: column;
+    }
+    .sm-full-header {
+        position: fixed;
+        width: 100%;
+    }
+    .nav {
+        display: none;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        color: white;
+        background-color: black;
+        padding-top: 30px;
+    }
+    .bars {
+        display: inline-block;
+        position: fixed;
+        z-index: 99;
+        padding: 5px 10px;
+        border-radius: 3px;
+        color: white;
+        background-color: red;
+        right: 20px;
+    }
+    #toggle:checked ~ .nav {
+        display: inline-block;
+        
+    }
+    #toggle {
+        display: none;
+    }
+
+    .header-main-right {
+        margin-top: 5rem;
+        align-items: center;
+        li {
+            margin-top: 3rem;
+            a {
+                font-size: 1.5rem;
+                color: white;
+            }
+        }
+        .dropdown-menu {
+            .dropdown {
+                background-color: #333333;
+                width: 12rem;
+                top: 0%;
+                transform: translateX(20px);
+            }
+        }
+    }
+
 }

@@ -9,10 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/721dc3a700.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/stylesheet/style.css">
-    <title>Pricing</title>
+    <title>Contact</title>
 </head>
 <body>
-    <header>
+    <<header class="sm-full-header">
         <div class="header-cta">
             <div class="container flex justify-between">
                 <ul class="flex header-cta-left">
@@ -32,16 +32,24 @@
             </div>
         </div>
         <div class="header-main">
-            <div class="container flex justify-between align-center">
-                <a href="#" class="brand"><span class="red">Uni</span> TECH</a>
-            <nav>
-                <ul class="flex justify-between header-main-right">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Pages</a></li>
+            <div class="container flex justify-between align-center sm-header">
+                <a href="./index.html" class="brand"><span class="red">Uni</span> TECH</a>
+                <label class="bars" for="toggle"><i class="fas fa-bars"></i></label>
+                <input id= "toggle" type="checkbox">
+                <nav class="nav">
+                <ul class="flex justify-between header-main-right sm-column">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li class="dropdown-menu"><a href="#">Pages
+                        <i class="fas fa-angle-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="./pricing.html">Pricing</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">404 Page</a></li>
+                    </ul></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
                 </ul>
             </nav>
             </div>
@@ -90,12 +98,12 @@
                     ullam sit amet excepturi totam sequi sed voluptatem maiores molestiae laborum, consectetur sint voluptas ab temporibus minus facere quos?</p>
             </div>
             <div class="flex justify-between align-center padding-bottom">
-                <figure class="flex-45 cp-form-item-1">
+                <figure class="flex-45 cp-form-item-1 width-full">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27004.274349447034!2d76.3016556367164!3d32.216777343247635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b50df65bd7311%3A0x3e08bdb100c6dc10!2sDharamshala%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1625805029875!5m2!1sen!2sin" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
                 </figure>
-                <div class="form-container flex-48">
-                    <form class="width cp-form text-center">
+                <div class="form-container flex-45">
+                    <form class="width-full cp-form text-center">
                       <input type="text" class= "form-control width" name="fullname" placeholder="Full Name">
                   
                       
