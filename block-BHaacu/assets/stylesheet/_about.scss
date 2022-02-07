@@ -64,3 +64,13 @@
     color: grey;
     padding-bottom: 1.4rem;
 }
+
+.ap-about h2, .ap-about p{
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .ap-mid-section {
+        justify-content: center;
+    }
+}

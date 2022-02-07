@@ -12,7 +12,7 @@
     <title>Services</title>
 </head>
 <body>
-    <header>
+    <header class="sm-full-header">
         <div class="header-cta">
             <div class="container flex justify-between">
                 <ul class="flex header-cta-left">
@@ -32,16 +32,24 @@
             </div>
         </div>
         <div class="header-main">
-            <div class="container flex justify-between align-center">
-                <a href="#" class="brand"><span class="red">Uni</span> TECH</a>
-            <nav>
-                <ul class="flex justify-between header-main-right">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Pages</a></li>
+            <div class="container flex justify-between align-center sm-header">
+                <a href="./index.html" class="brand"><span class="red">Uni</span> TECH</a>
+                <label class="bars" for="toggle"><i class="fas fa-bars"></i></label>
+                <input id= "toggle" type="checkbox">
+                <nav class="nav">
+                <ul class="flex justify-between header-main-right sm-column">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li class="dropdown-menu"><a href="#">Pages
+                        <i class="fas fa-angle-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="./pricing.html">Pricing</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">404 Page</a></li>
+                    </ul></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
                 </ul>
             </nav>
             </div>
@@ -63,8 +71,8 @@
         <section class="container">
             <div class="service-page-sc">
                 <h2>Our Services</h2>
-                <article class="flex justify-between align-item">
-                    <div class="flex-45">
+                <article class="flex justify-between align-item sm-wrap">
+                    <div class="flex-45 sm-flex-100">
                         <h3>Find the best services <br>
                             and consulting for <br> affordable deals</h3>
                          <p>
@@ -75,7 +83,7 @@
                          </p>
 
                     </div>
-                    <figure class="flex-45">
+                    <figure class="flex-45 sm-flex-100">
                         <img src="assets/media/business-1.jpg" alt="business-1" width="100%"">
                     </figure>
                 </article>
@@ -85,12 +93,12 @@
         <section class="container">
             <div class="service-pg-product-section">
                 <div class="text-center service-heading">
-                   <h2>Our Products</h2>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit fugiat expedita error culpa iste.</p>
+                   <h2 class="deafult-h2">Our Products</h2>
+                   <p class="default-p">Lorem ipsum dolor sit amet consectetur adipisicing elit fugiat expedita error culpa iste.</p>
                 </div>
                 <!--product-col-->
-                <div class= "flex service-page-ps-col wrap justify-between">
-                    <div class= "flex-30 service-page-ps-item">
+                <div class= "flex service-page-ps-col wrap justify-between sm-wrap">
+                    <div class= "flex-30 service-page-ps-item sm-flex-100">
                         <figure class= "service-page-ps-icon-container">
                            <img src="assets/media/consulting.svg" alt="Counsulting" width="100%">
                         </figure>
@@ -100,7 +108,7 @@
                          </p>
                         
                     </div>
-                    <div class= "flex-30  service-page-ps-item">
+                    <div class= "flex-30  service-page-ps-item sm-flex-100">
                         <figure class= "service-page-ps-icon-container">
                           <img src="assets/media/finance.svg" alt="finance" width="100%">
                        </figure>
@@ -110,7 +118,7 @@
                        </p>
                      
                    </div>
-                   <div class= "flex-30 service-page-ps-item">
+                   <div class= "flex-30 service-page-ps-item sm-flex-100">
                       <figure class= "service-page-ps-icon-container">
                           <img src="assets/media/technology.svg" alt="Counsulting" width="100%">
                       </figure>
@@ -119,7 +127,7 @@
                           Dolorum officiis rem fuga, ipsum ipsa laborum, voluptatem.
                       </p>
                    </div>             
-                   <div class= "flex-30 service-page-ps-item">
+                   <div class= "flex-30 service-page-ps-item sm-flex-100">
                       <figure class= "service-page-ps-icon-container">
                       <img src="assets/media/consulting.svg" alt="Counsulting" width="100%">
                       </figure>
@@ -127,7 +135,7 @@
                       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                           Dolorum officiis rem fuga, ipsum ipsa laborum, voluptatem.</p>
                    </div>
-                   <div class= "flex-30  service-page-ps-item">
+                   <div class= "flex-30  service-page-ps-item sm-flex-100">
                         <figure class= "service-page-ps-icon-container">
                         <img src="assets/media/finance.svg" alt="finance" width="100%">
                         </figure>
@@ -136,7 +144,7 @@
                         Dolorum officiis rem fuga, ipsum ipsa laborum, voluptatem.
                         </p>
                     </div>
-                    <div class= "flex-30 service-page-ps-item">
+                    <div class= "flex-30 service-page-ps-item sm-flex-100">
                         <figure class= "service-page-ps-icon-container">
                         <img src="assets/media/technology.svg" alt="Counsulting" width="100%">
                         </figure>
@@ -151,9 +159,9 @@
         <!--sercvice-page-request-section--->
         <section>
             <div class="service-page-request-section">
-                <div class="container flex justify-item">
-                    <h2>Best Deals</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing ipsum, dolor sit amet elits natus quia.</p>
+                <div class="container flex justify-item sm-wrap">
+                    <h2 class="sm-flex-100">Best Deals</h2>
+                    <p class="sm-flex-100">Lorem ipsum, dolor sit amet consectetur adipisicing ipsum, dolor sit amet elits natus quia.</p>
               
                 </div>
             </div>
@@ -166,12 +174,12 @@
                     Iure dignissimos nemo minus expedita nisi asperiores odio 
                     provident repudiandae ad earum, non impedit nobis?</p>
             </div>
-            <article class="flex justify-between container service-page-award-article">
-                <div class="flex-45">
+            <article class="flex justify-between container service-page-award-article sm-wrap">
+                <div class="flex-45 sm-flex-100">
                     <h3>There are many variations <br> of passages of Lorem <br> ipsum available</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem suscipit dolor excepturi molestiae! Illum repudiandae, reiciendis error magnam quasi exercitationem.</p>
                 </div>
-                <figure class="flex-45">
+                <figure class="flex-45 sm-flex-100">
                     <img src="assets/media/business-4.jpg" alt="business-4" width="100%">
                 </figure>
             </article>
@@ -179,15 +187,15 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="flex justify-between up-footer">
-                <ul class="flex-22 footer-col-1">
+            <div class="flex justify-between up-footer sm-wrap">
+                <ul class="flex-22 footer-col-1 sm-flex-100">
                     <li class="footer-col-1-li">Reach us</li>
                     <li><i class="fas fa-location-arrow"></i>#123, Manhatten,7 Avenu,NYC</li>
                     <li><i class="fas fa-phone"></i>+1-12345-678-980</li>
                     <li><i class="far fa-envelope"></i><a href="#">info@yourdomain.com</a></li>
                     
                 </ul>
-                <ul class="flex-22 footer-col-2">
+                <ul class="flex-22 footer-col-2 sm-flex-45">
                     <li>Site links</li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
@@ -195,14 +203,14 @@
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Pricing</a></li>
                 </ul>
-                <ul class="flex-22 footer-col-2">
+                <ul class="flex-22 footer-col-2 sm-flex-45">
                     <li>Quick links</li>
                      <li><a href="#">Blog</a></li>
                      <li><a href="#">Contact Us</a></li>
                      <li><a href="#">Privacy Policy</a></li>
                      <li><a href="#">Terms & Conditions</a></li>
                 </ul>
-                <ul class="flex-22 footer-col-1">
+                <ul class="flex-22 footer-col-1 sm-flex-100">
                     <li class="footer-col-1-li">Follow us</li>
                     <li>
                         <ul class="flex footer-social-link">

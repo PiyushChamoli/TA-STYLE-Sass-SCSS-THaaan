@@ -26,9 +26,8 @@
 padding: 5rem 0;
 }
 
-.cp-address-section .cp-text{
-color: grey;
-padding: 0 10rem;
+.cp-text{
+    @extend .default-p;
 }
 
 
@@ -36,7 +35,7 @@ padding: 0 10rem;
 padding: 2rem;
 li{
     i{  
-        color: $primary;
+        color: $primary-color;
         font-size: 1.5rem;
         display: inline-block;
         
@@ -64,6 +63,7 @@ text-decoration: none;
 color: black;
 }
 
+
 .cp-cfs-heading{
 padding: 2rem 5rem;
 color: grey;
@@ -82,23 +82,31 @@ iframe{
 }
 
 .form-control{
-padding: 0.7rem 0;
-margin-bottom: 1.2rem;
-font-size: 1rem;
+    padding: 0.7rem 0;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
 }
 
 .cp-form .btn{
-display: inline-block;
-text-align: center;
-border: none;
-padding-left: 2rem;
-padding-right: 2rem;
-margin: 0.5rem 0;
-
+    display: inline-block;
+    text-align: center;
+    border: none;
+    padding: 0.4rem 1.2rem;
+    border: 1px solid #DC4445;
+    border-radius: 20px;
+    max-width: 30%;
+    background-color: white;
+    align-self: center;
+    margin-top: 1rem;
 }
 
 
 .padding-bottom{
-padding-top: 3rem;
-padding-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.cp-form {
+    display: flex;
+    flex-direction: column;
 }
